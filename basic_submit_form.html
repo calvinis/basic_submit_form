@@ -1,0 +1,157 @@
+<!--Modified from a required project for school-->
+<!--Uses .js and .php code from Rossiter-->
+
+<html>
+<body>
+  <head>
+    <title>Basic Form to Fill Out and Submit</title>
+  </head>
+
+<style>
+label, input {
+	margin: 5px 2px 5px 0px;
+}
+
+
+fieldset {
+	background: lightblue;
+	border: 10px solid blue;
+	margin-bottom: 10px;
+	width: 720px;
+}
+
+
+label:hover, input:hover {
+        background-color: #99bbff;
+    }
+
+    .indicator1 {
+    	background-color: black  ;
+    	padding: 3px;
+    	margin:0;
+    }
+
+
+label {
+	width: 180px;
+	text-align:right;
+	vertical-align: top;
+  display:inline-block;
+}
+
+
+.auto-width {
+	width: auto;
+}
+
+.white {
+	color:white;
+}
+
+
+textarea {
+	width:360px;
+	height:50px;
+}
+
+.indicator2 {
+		background-color: purple;
+		padding: 3px;
+		margin:0;
+}
+
+
+
+
+mark {
+    background-color: red;
+    color: white;
+}
+
+</style>
+
+<h1>This is a basic 'Submit Form' template</h1>
+
+<form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
+
+
+
+<fieldset>
+				<legend>Your Face</legend>
+	<label for="profile">Your image: </label>
+						<input type="file" name="fileToUpload" required><br>
+				<label for="preview">Image Preview: </label>
+	 <img src="http://basthammasat.org/wp-content/uploads/2014/11/Blank-Copy-2.jpg" width="100" height="" id="preview">
+</fieldset>
+<fieldset>
+
+			<legend>Your General Details</legend>
+	<label for="name">Name: </label>
+	<input type="text" name="full_name" placeholder="Your full name" required><br>
+
+
+		<label for="gender" class="auto-width">Gender: </label>
+	<input type="radio" name="gender" value="male" required>Male
+	<input type="radio" name="gender" value="female" required>Female<br>
+
+		<label for="age">Age: </label><input type="number" min="0" max="99" step="1" name="age" required><br>
+
+	<label for="birth_date">Date of birth:</label><input type="date" name="date_of_birth"><br>
+
+	<label for="eye_color">Eye Color: </label><input type="color" name="eyecolor"><br>
+
+		<label for="your_country">Which country: </label>
+		<select name="country list">
+				<option value="no selection">No Selection</option>
+        <option value="Spain">Spain</option>
+        <option value="U.S.">United States</option>
+        <option value="Timbuktu">Timbuktu</option>
+        <option value="Rhode Island (the country)">Rhode Island (the country)</option>
+				<option value="Mars (the country)">Mars (the country)</option>
+     </select><br>
+</fieldset>
+<fieldset>
+	<legend>Your Indicators</legend>
+
+
+  <label for="awesomeness">Awesomeness:</label>
+	<mark>Less</mark>
+	<input type="range" text-align:center min="0" max="100" step="4" name="awesomeness">
+	<span style="background-color:green"><font color="white">More</font></span>
+<br>
+
+	<label for="suckiness">Suckiness:</label>
+	<mark>Less</mark>
+	<input type="range" text-align:center min="0" max="100" step="4" name="suckiness">
+	<span style="background-color:green"><font color="white">More</font></span>
+
+						</fieldset>
+						<fieldset>
+								<legend>Your Contact Information</legend>
+							<label for="email">Email:</label>
+                            <input type="email" name="email" required><br>
+
+							<label for="phone">Mobile:</label>
+							<input type="tel" name="telephone"><br>
+
+							<label for="address">Address:</label>
+							<textarea name="address">
+</textarea>
+							<br>
+
+							<label class="auto-width" for="contact_info">Method to contact you:</label>
+							<input type="checkbox" name="contact" value="email">Email
+							<input type="checkbox" name="contact" value="phone">Phone
+							<input type="checkbox" name="contact" value="skype">Skype
+						</fieldset>
+	<input type="submit" value="Submit" name="submit">
+</form>
+
+
+<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+
+</body>
+</html>
+
+<!--Modified from a required project for school-->
+<!--Uses .js and .php code from Rossiter-->
